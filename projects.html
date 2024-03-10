@@ -44,6 +44,15 @@
                 width: 50%;
                 transform: translate(-50%, 0%);
             }
+
+            .row {
+                display: flex;
+            }
+
+            .column {
+                flex: 50%;
+                padding: 10px;
+            }
         </style>
     </head>
 
@@ -51,6 +60,7 @@
         <div class="topnav">
             <a href="index.html">Home</a>
             <a class="active" href="projects.html">Projects</a>
+            <a href="ethics.html">CPR E 394 Ethics Essay</a>
             <a href="about.html">About</a>
         </div>
 
@@ -59,43 +69,52 @@
         <div id="projects">
             <h1>My Projects</h1>
 
-            <div id="mips-processor">
-                <h2>Pipelined MIPS Processor</h2>
-                <p>
-                    As part of CPR E 381, the computer architecture class at Iowa State, my partner and I made a MIPS processor in VHDL.  The goal of the project was
-                    to apply the concepts taught in class to build a simple processor and improve performance through various techniques, such as pipelining and data
-                    forwarding.  The processor can run a subset of the MIPS R2000 instruction set using a 5 stage RISC pipeline for increased performance.  I primarily
-                    worked on the arithmetic logic unit and control/data hazard logic, which allowed the processor to understand instructions and perform calculations.
-                    In addition to the technical challenges in our respective parts of the project, integrating everything together took a significant amount of communication
-                    and coordination in order to make a final product that was both functional and high performance.  I have made the source code private at the request of
-                    the professor, but I can provide it if desired.
-                </p>
+            <h2>Pipelined MIPS Processor</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="res/cpu_diagram.png" width="100%" height="auto">
+                </div>
+                <div class="column">
+                    <p>As part of CPR E 381, the computer architecture class at Iowa State, my partner and I made a MIPS processor in VHDL.  The goal of the project was
+                       to apply the concepts taught in class to build a simple processor and improve performance through various techniques, such as pipelining and data
+                       forwarding.  The processor can run a subset of the MIPS R2000 instruction set using a 5 stage RISC pipeline for increased performance.  I primarily
+                       worked on the arithmetic logic unit and control/data hazard logic, which allowed the processor to understand instructions and perform calculations.
+                       In addition to the technical challenges in our respective parts of the project, integrating everything together took a significant amount of communication
+                       and coordination in order to make a final product that was both functional and high performance.  I have made the source code private at the request of
+                       the professor, but I can provide it if desired.</p>
+                </div>
             </div>
 
-            <div id="bluetooth-controller">
-                <h2>Serial Bluetooth Controller App</h2>
-                <p>
-                    This was a personal project I created to allow peripherals driven by an ESP-32 microcontroller to be controlled with an Android device via Bluetooth.
-                    It makes use of a serial Bluetooth connection which sends a data stream between two devices.  The app uses the data stream to send and receive special
-                    packets that I created for use in the app that describe the state of the controller, such as the position of the joysticks and the state of the buttons.
-                    Using the controller is straightforward.  The app presents a pair of joysticks and four buttons on the screen, similar to what would be seen on controllers
-                    for popular video game consoles.  On the microcontroller side, I created a C++ library that receives and parses the packets from Bluetooth and updates the
-                    state of the controller on the microcontroller.  Using the controller state, I can easily perform tasks with the microcontroller such as turning devices
-                    on and off or sending data over other interfaces.
-                </p>
+            <h2>Serial Bluetooth Controller App</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="res/bluetooth_controller.png" width="100%" height="auto">
+                </div>
+                <div class="column">
+                    <p>This was a personal project I created to allow peripherals driven by an ESP-32 microcontroller to be controlled with an Android device via Bluetooth.
+                       It makes use of a serial Bluetooth connection which sends a data stream between two devices.  The app uses the data stream to send and receive special
+                       packets that I created for use in the app that describe the state of the controller, such as the position of the joysticks and the state of the buttons.
+                       Using the controller is straightforward.  The app presents a pair of joysticks and four buttons on the screen, similar to what would be seen on controllers
+                       for popular video game consoles.  On the microcontroller side, I created a C++ library that receives and parses the packets from Bluetooth and updates the
+                       state of the controller on the microcontroller.  Using the controller state, I can easily perform tasks with the microcontroller such as turning devices
+                       on and off or sending data over other interfaces.</p>
+                </div>
             </div>
 
-            <div id="code-app">
-                <h2>Learn to Code App</h2>
-                <p>
-                    This was a team project for COM S 342, the software development class at Iowa State.  My team and I created an Android app and Linux server backend that
-                    was capable of providing simple lessons for the user to teach basic concepts of programming languages.  The user would read the lesson, and then be asked
-                    to complete coding exercises that were created by the course instructor via the same app.  The app would send the data to the Linux server, which would
-                    run the code that was created by the user.  This code was checked for correctness on the backend and a grade was autogenerated and entered into the
-                    student's gradebook.  I was responsible for the code running and checking on the backend, as well as part of the API that was used by the app to communicate
-                    with the server.  There were some interpersonal struggles when working on the project, which required better communication and scheduling to work through.
-                    Ultimately, the team and I were successful, and the final app worked as intended.
-                </p>
+            <h2>Learn to Code App</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="res/code42.png" width="100%" height="auto">
+                </div>
+                <div class="column">
+                    <p>This was a team project for COM S 342, the software development class at Iowa State.  My team and I created an Android app and Linux server backend that
+                       was capable of providing simple lessons for the user to teach basic concepts of programming languages.  The user would read the lesson, and then be asked
+                       to complete coding exercises that were created by the course instructor via the same app.  The app would send the data to the Linux server, which would
+                       run the code that was created by the user.  This code was checked for correctness on the backend and a grade was autogenerated and entered into the
+                       student's gradebook.  I was responsible for the code running and checking on the backend, as well as part of the API that was used by the app to communicate
+                       with the server.  There were some interpersonal struggles when working on the project, which required better communication and scheduling to work through.
+                       Ultimately, the team and I were successful, and the final app worked as intended.</p>
+                </div>
             </div>
         </div>
     </body>
