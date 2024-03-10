@@ -30,12 +30,25 @@
             background-color: #046daa;
             color: white;
         }
+
+        #banner {
+            background-image: url("res/pcb.jpeg");
+            height: 400px;
+        }
+
+        #welcome {
+            position: relative;
+            left: 50%;
+            min-width: 500px;
+            width: 50%;
+            transform: translate(-50%, 0%);
+        }
     </style>
 </head>
 
 <title>Nathan's Portfolio</title>
 
-<body>
+<body style="background-color: darkgrey;">
 
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
@@ -43,8 +56,15 @@
         <a href="about.html">About</a>
     </div>
 
-    <h1>Welcome to Nathan's Portfolio</h1>
-    <p>Sample text</p>
+    <div id="banner"></div>
+
+    <div id="welcome">
+        <h1>Welcome</h1>
+        <p>
+            This is the website for Nathan Stark.  Please take a look at my projects or about me section to learn more.
+            Feel free to reach out if you have questions or want to learn more about me!
+        </p>
+    </div>
 
 </body>
 </html>
