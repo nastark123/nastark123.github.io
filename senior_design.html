@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+        
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+        
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+        
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        
+            .topnav a.active {
+                background-color: #046daa;
+                color: white;
+            }
+
+            #banner {
+                background-image: url("res/pcb.jpeg");
+                height: 400px;
+            }
+
+            #seniordesign {
+                position: absolute;
+                left: 50%;
+                min-width: 500px;
+                width: 50%;
+                transform: translate(-50%, 0%);
+            }
+        </style>
+    </head>
+
+    <body style="background-color: darkgrey;">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a class="active" href="senior_design.html">Senior Design</a>
+            <a href="ethics.html">CPR E 394 Ethics Essay</a>
+            <a href="cumulative_reflection.html">CPR E 494 Cumulative Reflection</a>
+            <a href="resume.html">Resume</a>
+        </div>
+
+        <div id="banner"></div>
+
+        <div id="seniordesign">
+            <h1>Project Description</h1>
+            <p>
+                My senior design project is to create a radio microcontroller using the Efabless Skywater 130 nm Process.  The microcontroller will include a RISC-V
+                processor, generated SRAM, external peripherals such as SPI, UART, and I2C, internal peripherals such as DMA, and a PLL for generating RF frequencies.
+                The project will not result in all of the functionality necessary to implement a radio protocol such as Zigbee or Bluetooth due to time constraints,
+                but will be continued by future students who will build off the work of my group.  My focus on the project will be creating and testing various
+                digital peripherals, such as a crossbar for bus arbitration, the RISC-V processor, and the DMA engine.  The project is still ongoing and is expected
+                to complete in May 2025.  After the microcontroller is fabricated, it will be used by the Iowa State ChipForge cocurricular, which aims to teach
+                students about the basics of ASIC design, to see what is possible in the process and to teach new club members how to design and test ASICs.
+                <br>
+                <br>
+                The primary skills learned in taking on this project so far have been the Verilog language, OpenRAM RAM compiler, GTKWave for viewing testbench
+                waveforms, and writing C files to interact with custom memory-mapped peripherals.  Many of the concepts used for this have been taught in some form in
+                other classes at Iowa State, so much of my learning is centered around applying a lot of previous concepts together to create a more complex and
+                capable product.
+            </p>
+
+            <h1>High-Level Block Diagram</h1>
+            <img src="res/senior_design_block_diagram.png" width="100%" height="auto">
+
+            <h1>Design Document</h1>
+            <object data="res/senior_design_plan.pdf" type="application/pdf" width="100%" height="1000px">
+                <p>Unable to display PDF file. <a href="res/senior_design_plan.pdf">Download</a> instead.</p>
+            </object>
+        </div>
+    </body>
+
+</html>
